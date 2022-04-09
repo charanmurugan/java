@@ -1,9 +1,16 @@
-import java.util.Scanner;
+class InnerSample {
+    static void sample() {
+        System.out.println("hello");
+    }
+
+}
 
 public class Test {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        String name = scanner.next();
-        System.out.print(name);
+        Sample sample = new Sample();
+        System.out.println("start");
+        sample.testing("charan");
+        InnerSample.sample();
+
     }
 }
